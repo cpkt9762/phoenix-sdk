@@ -11,16 +11,16 @@ codegen-units = 1
 overflow-checks = true
 
 [workspace.dependencies]
-spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
+spl-token = { version = "7.0.0", features = ["no-entrypoint"] }
 anyhow = "1.0.52"
-solana-account-decoder = ">=1.14.12, <1.19"
-solana-sdk = ">=1.14.12, <1.19"
-solana-client = ">=1.14.12, <1.19"
-borsh = "0.9.3"
+solana-account-decoder = "^2.1.1"
+solana-sdk = "^2.1.1"
+solana-client = "^2.1.1"
+borsh = "0.10.4"
 rand = "0.7.3"
-ellipsis-client = "1.0.0"
-ellipsis-transaction-utils = "1.0.0" 
-phoenix-common = { version = "0.2.1", features = [ "no-entrypoint" ]} 
+ellipsis-client =  {git ="https://github.com/cpkt9762/ellipsis-client",branch = "master"}
+ellipsis-transaction-utils = {git ="https://github.com/cpkt9762/ellipsis-client",branch = "master"}
+phoenix-common = { version = "0.3.0", features = [ "no-entrypoint" ]} 
 tokio = { version = "1.23.0", features = ["full"] }
 clap = { version = "3.0.13", features = ["derive"] }
 shellexpand = "2.1.2"
@@ -30,4 +30,6 @@ rust_decimal_macros = "1.26"
 itertools = "0.10.5"
 bytemuck = "1.13.1"
 serde = "^1.0.63"
-phoenix-seat-manager-common = "0.1.1"
+phoenix-seat-manager = {git ="https://github.com/cpkt9762/phoenix-seat-manager-v1",branch = "master"}
+
+ 
